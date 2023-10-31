@@ -2,26 +2,98 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    font-size: 100%;
+    font-weight: 400;
+    color: black;
+    text-transform: none;
+    text-size-adjust: 100%;
+    text-rendering: optimizelegibility;
+
+    background-color: #fff;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  body {
+    height: 100%;
   }
 }
+@layer components {
+  /* .visually-hidden {
+    @apply absolute m--px h-px w-px overflow-hidden whitespace-nowrap border-0 p-0;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+  } */
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .btn {
+    background: rgba(120, 192, 129, 0.25);
+    border-radius: 40px;
+    padding: 15px;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+
+    &:disabled div {
+      background: #9cd3a3;
+    }
+
+    & div {
+      border-radius: 30px;
+      background: #5ccd6a;
+      box-shadow: 2px -2px 12px 0px rgba(34, 111, 33, 0.36) inset;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & div:hover {
+      background: #54e165;
+    }
+  }
+
+  .background-hero {
+    background-image: url("/image/backgroundHero.png"),
+      linear-gradient(
+        180deg,
+        rgb(242, 242, 242),
+        rgb(240, 242, 241) 17.352%,
+        rgb(239, 239, 239) 35.508%,
+        rgb(234, 236, 235) 51.426%,
+        rgb(231, 232, 234) 66.972%,
+        rgb(226, 230, 229) 82.268%,
+        rgb(222, 226, 225) 100%
+      );
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: bottom;
+  }
+}
+@layer utilities {
 }

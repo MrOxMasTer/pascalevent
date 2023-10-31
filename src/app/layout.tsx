@@ -1,16 +1,52 @@
+import { Header } from "@/widgets/Header/ui/Header";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-type typeLocal = Array<{ path: string; weight?: string; style?: string }>;
-
 const proxima = localFont({
   src: [
     {
-      path: "",
+      path: "../shared/assets/fonts/ProximaNova-Regular.woff2",
+      weight: "400",
+    },
+    {
+      path: "../shared/assets/fonts/ProximaNova-Semibold.woff2",
+      weight: "600",
+    },
+    {
+      path: "../shared/assets/fonts/ProximaNova-Bold.woff2",
+      weight: "700",
     },
   ],
   variable: "--proxima",
+  display: "swap",
+});
+
+const ruberoid = localFont({
+  src: [
+    {
+      path: "../shared/assets/fonts/Ruberoid-Light.woff2",
+      weight: "300",
+    },
+    {
+      path: "../shared/assets/fonts/Ruberoid-Regular.woff2",
+      weight: "400",
+    },
+    {
+      path: "../shared/assets/fonts/Ruberoid-Medium.woff2",
+      weight: "500",
+    },
+    {
+      path: "../shared/assets/fonts/Ruberoid-SemiBold.woff2",
+      weight: "600",
+    },
+    {
+      path: "../shared/assets/fonts/Ruberoid-Bold.woff2",
+      weight: "700",
+    },
+  ],
+  variable: "--ruberoid",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -24,8 +60,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={proxima.className}>{children}</body>
+    <html lang="ru">
+      <body
+        className={`debug-screens font-pascal-event ${ruberoid.variable} ${proxima.variable}`}
+      >
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
