@@ -1,13 +1,14 @@
-import SvgPhone from "@/shared/assets/svg/SvgPhone";
-import SvgPin from "@/shared/assets/svg/SvgPin";
-import SvgTroetogo from "@/shared/assets/svg/SvgTroetogo";
 import { Button } from "@/shared/ui/Button";
+
+import SvgPhone from "@svg/Phone.svg?url";
+import SvgPin from "@svg/Pin.svg?url";
+import SvgTroetogo from "@svg/Troetogo.svg?url";
 
 export const Hero = () => {
   return (
-    <section className="background-hero grid pb-[296px]">
+    <section className="background-hero grid pb-[296px] pt-[148px]">
       <div className="container">
-        <h2 className="text-grayAsparagus font-ruberoid text-[2rem] capitalize mm:text-[2.25rem] leading-[2.875rem] mt-[148px] font-semibold text-end">
+        <h2 className="text-grayAsparagus font-ruberoid text-[2rem] capitalize mm:text-[2.25rem] leading-[2.875rem] font-semibold text-end">
           чистый воздух
           <span className="inline-block bg-deYork h-0.5 w-[85px] mm:w-[93px] align-middle me-[15px]" />
           вместе с

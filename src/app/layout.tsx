@@ -56,14 +56,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  menu,
 }: {
   children: React.ReactNode;
+  menu: React.ReactNode;
 }) {
   return (
     <html lang="ru">
       <body
-        className={`debug-screens font-pascal-event ${ruberoid.variable} ${proxima.variable}`}
+        className={`debug-screens font-pascal-event relative ${ruberoid.variable} ${proxima.variable}`}
       >
+        {menu}
         <Header />
         {children}
       </body>

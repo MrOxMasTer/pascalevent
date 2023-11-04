@@ -28,6 +28,8 @@ const config: Config = {
       amulet: "#7CA381",
       xanadu: "#7B897D",
       emerald: "#5CCD6A",
+      blueRomance: "#D9FADD",
+      gray: "#848484",
     },
     fontFamily: {
       "pascal-event": [
@@ -38,9 +40,9 @@ const config: Config = {
       proxima: "var(--proxima)",
       ruberoid: "var(--ruberoid)",
     },
-    fontSize: {},
     boxShadow: {
       menu: "0px 4px 10px 0px rgba(73, 93, 76, 0.15)",
+      servicesImg: "0px -4px 8px 0px rgba(15, 44, 15, 0.35)",
     },
     extend: {
       backgroundImage: {

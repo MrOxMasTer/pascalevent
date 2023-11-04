@@ -45,12 +45,6 @@
   }
 }
 @layer components {
-  /* .visually-hidden {
-    @apply absolute m--px h-px w-px overflow-hidden whitespace-nowrap border-0 p-0;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-  } */
-
   .btn {
     background: rgba(120, 192, 129, 0.25);
     border-radius: 40px;
@@ -81,7 +75,7 @@
   .background-hero {
     background-image: url("/image/backgroundHero.png"),
       linear-gradient(
-        180deg,
+        270deg,
         rgb(242, 242, 242),
         rgb(240, 242, 241) 17.352%,
         rgb(239, 239, 239) 35.508%,
@@ -93,6 +87,21 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: bottom;
+  }
+
+  .btn-services {
+    background: #fff;
+    color: #7ca281;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &[data-valid="this"] {
+      background: #5ccd6a;
+      box-shadow: -2px -2px 12px 0px rgba(34, 111, 33, 0.3) inset;
+      color: #fff;
+    }
   }
 }
 @layer utilities {

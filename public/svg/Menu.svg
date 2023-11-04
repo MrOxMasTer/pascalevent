@@ -1,10 +1,6 @@
-<svg width="25.000000" height="16.000000" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<desc>
-			Created with Pixso.
-	</desc>
-	<defs/>
-	<rect id="Rectangle 708" rx="1.000000" width="25.000000" height="2.000000" fill="#5CCD6A"/>
-	<rect id="Rectangle 711" y="14.000000" rx="1.000000" width="25.000000" height="2.000000" fill="#5CCD6A"/>
-	<rect id="Rectangle 709" x="9.000000" y="7.000000" rx="1.000000" width="16.000000" height="2.000000" fill="#5CCD6A"/>
-	<rect id="Rectangle 710" y="7.000000" rx="1.000000" width="6.000000" height="2.000000" fill="#5CCD6A"/>
+<svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<rect id="Rectangle 708" rx="1" width="25" height="2" fill="#5CCD6A"/>
+	<rect id="Rectangle 711" y="14" rx="1" width="25" height="2" fill="#5CCD6A"/>
+	<rect id="Rectangle 709" x="9" y="7" rx="1" width="16" height="2" fill="#5CCD6A"/>
+	<rect id="Rectangle 710" y="7" rx="1" width="6" height="2" fill="#5CCD6A"/>
 </svg>
