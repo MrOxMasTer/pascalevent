@@ -13,7 +13,7 @@ export const Header = () => {
   return (
     <header className="w-full absolute">
       <h1 className="visually-hidden">Pascal Vent</h1>
-      <div className="container pt-3.5 flex items-center justify-between relative">
+      <div className="container pt-3.5 flex items-center justify-between relative min-h-[83px]">
         <Logo
           aria-label="логотип-ссылка на главную страницу"
           className="block"

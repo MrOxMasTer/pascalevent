@@ -18,9 +18,7 @@ export default function MenuPage() {
   return (
     <>
       {menu === "true" ? (
-        <div className="bg-blueRomance absolute top-0 z-10 w-full h-screen">
-          MENU PAGE
-        </div>
+        <div className="bg-blueRomance absolute top-0 z-10 w-full h-screen"></div>
       ) : null}
     </>
   );

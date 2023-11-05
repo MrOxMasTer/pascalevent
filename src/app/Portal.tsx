@@ -8,6 +8,8 @@ interface PortalProviderProps {
   selector: string;
 }
 
+//? Убрать портал?
+
 export default function Portal({ children, selector }: PortalProviderProps) {
   const ref = useRef();
   const [mounted, setMounted] = useState(false);
