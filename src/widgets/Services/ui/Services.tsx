@@ -4,9 +4,9 @@ export const Services = () => {
   return (
     <section>
       <div className="container mt-[4.375rem]">
-        <h2 className="text-grayAsparagus text-[1.75rem] capitalize font-ruberoid leading-[2.375rem]">
+        <h2 className="title-lv2 inline-block">
           Предоставляемые Услуги
-          <span className="rounded-[1.5px] w-40 my-auto bg-deYork ms-[15px] h-0.5 inline-flex align-middle" />
+          <span className="rounded-[1.5px] my-auto bg-deYork ms-[15px] h-0.5 inline-block min-w-[140px] max-w-max align-middle" />
         </h2>
         <div className="mt-[1.5625rem] text-gray leading-6 text-sm pb-[1.875rem]">
           <p>

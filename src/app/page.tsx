@@ -1,4 +1,5 @@
 import { Hero } from "@/widgets/Hero";
+import { Prices } from "@/widgets/Prices";
 import { Services } from "@/widgets/Services";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <Hero />
       <Services />
+      <Prices />
     </main>
   );
 }

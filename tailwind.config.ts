@@ -30,6 +30,8 @@ const config: Config = {
       emerald: "#5CCD6A",
       blueRomance: "#D9FADD",
       gray: "#848484",
+      silver: "#c4c4c4",
+      wildSand: "#f5f5f5",
     },
     fontFamily: {
       "pascal-event": [
@@ -43,6 +45,8 @@ const config: Config = {
     boxShadow: {
       menu: "0px 4px 10px 0px rgba(73, 93, 76, 0.15)",
       servicesImg: "0px -4px 8px 0px rgba(15, 44, 15, 0.35)",
+      cardPrice: "0px 0px 10px 0px rgba(73, 93, 76, 0.1)",
+      cardPriceImg: "0px 2px 4px 0px rgba(46, 35, 25, 0.3)",
     },
     extend: {
       backgroundImage: {
@@ -50,10 +54,14 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         hero: "linear-gradient(180deg, #F2F2F2 0.09%, #F0F2F1 17.41%, #EFEFEF 35.53%, #EAECEC 51.42%, #E8EAEA 59.88%, #E7E8EA 66.94%, #E2E6E5 82.21%, #DEE2E1 99.91%), url('/image/backgroundHero.png')",
+        prices: "url('/image/leaves.png')",
       },
-      // backgroundPosition: {
-      //   hero: "bottom",
-      // },
+      backgroundPosition: {
+        prices: "-25px top",
+      },
+      backgroundSize: {
+        prices: "",
+      },
     },
   },
   plugins: [
